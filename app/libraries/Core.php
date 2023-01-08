@@ -36,8 +36,8 @@
                     // unset current index
                     unset($url[3]);
                     //check possibility of unsetting when set with live server
-                    unset($url[0]);
-                    unset($url[1]);
+//                    unset($url[0]);
+//                    unset($url[1]);
                 }
             }
             // Get params
