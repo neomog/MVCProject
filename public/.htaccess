@@ -1,6 +1,8 @@
 <IfModule mod_rewrite.c>
   Options -Multiviews
   RewriteEngine On
+  #Rewrite base below to be changed depending on
+  #The environment to be used in
   RewriteBase /nathmvc/public
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f

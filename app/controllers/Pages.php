@@ -1,21 +1,27 @@
 <?php
 
-class Pages
+class Pages extends Controller
 {
+    private mixed $postModel;
+
     public function __construct() {
-//         $this->about(3);
     }
 
     public function index()
     {
+        $data = [
+            'title' => 'Welcome',
+        ];
 
+        $this->view('pages/index', $data);
     }
 
-    public function about($id)
+    public function about()
     {
-        echo '<pre>';
-        echo 'Love you Nath about PAGE ' . $id;
-        echo '</pre>';
+        $data = [
+            'title' => 'About Us'
+        ];
+        $this->view('pages/about', $data);
     }
 
 }
