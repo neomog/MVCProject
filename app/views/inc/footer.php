@@ -1,3 +1,3 @@
-<script src="<?= URLROOT; ?>/js/main.js"></script>
+<script src="<?= APPROOT; ?>public/js/main.js"></script>
 </body>
 </html>

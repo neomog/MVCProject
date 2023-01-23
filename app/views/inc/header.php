@@ -9,6 +9,6 @@
 </head>
 <body>
 
-<?php echo APPROOT . "public/css/style.css" . PHP_EOL;
- echo file_get_contents(APPROOT . "public/css/style.css");
+<?php //echo APPROOT . "public/css/style.css" . PHP_EOL;
+// echo file_get_contents(APPROOT . "public/css/style.css");
 ?>

@@ -2,21 +2,26 @@
 
 class Pages extends Controller
 {
+    private mixed $postModel;
+
     public function __construct() {
-//         $this->about(3);
     }
 
     public function index()
     {
         $data = [
-            'title' => 'Welcome'
+            'title' => 'Welcome',
         ];
+
         $this->view('pages/index', $data);
     }
 
     public function about()
     {
-        $this->view('pages/about');
+        $data = [
+            'title' => 'About Us'
+        ];
+        $this->view('pages/about', $data);
     }
 
 }
