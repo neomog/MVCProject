@@ -3,7 +3,7 @@
   RewriteEngine On
   #Rewrite base below to be changed depending on
   #The environment to be used in
-  RewriteBase /nathmvc/public
+  RewriteBase /sharepost/public
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]

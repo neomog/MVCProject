@@ -94,6 +94,7 @@ class Database {
      * Get single record as object
      */
     public function single() {
+        $this->stmt->execute();
         return $this->stmt->fetch(PDO::FETCH_OBJ);
     }
 }

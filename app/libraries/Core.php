@@ -33,17 +33,18 @@
                 // Check to see if method exists in current controller
                 if(method_exists($this->currentController, $url[3])) {
                     $this->currentMethod = $url[3];
+
                     // unset current index
                     unset($url[3]);
                     //check possibility of unsetting when set with live server
-//                    unset($url[0]);
-//                    unset($url[1]);
+                    unset($url[0]);
+                    unset($url[1]);
                 }
             }
             // Get params
             $this->params = $url ? array_values($url) : [];
             // Call a callback with array of parameters
-            call_user_func([$this->currentController, $this->currentMethod], $this->params[0]);
+            call_user_func([$this->currentController, $this->currentMethod], $this->params[0] ?? "");
         }
 
         public function getUrl()
